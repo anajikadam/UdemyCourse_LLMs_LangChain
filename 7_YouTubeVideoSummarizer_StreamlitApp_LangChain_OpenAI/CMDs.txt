@@ -1,0 +1,10 @@
+C:\Users\user\AppData\Local\Programs\Python\Python311\python.exe -m venv VenvYT
+
+VenvYT\Scripts\activate
+
+
+streamlit run app.py
+streamlit run streamlitLangChainApp.py
+
+pip freeze > requirements.txt
+
