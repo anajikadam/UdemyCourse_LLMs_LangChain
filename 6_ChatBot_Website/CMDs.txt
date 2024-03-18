@@ -1,0 +1,17 @@
+C:\Users\user\AppData\Local\Programs\Python\Python311\python.exe -m venv VenvWeb
+
+VenvWeb\Scripts\activate
+
+
+streamlit run app.py
+streamlit run streamlitLangChainApp.py
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+pip install -U langchain-community
+
+
+
+https://openai.com/sitemap.xml

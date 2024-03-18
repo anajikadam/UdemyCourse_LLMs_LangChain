@@ -1,0 +1,70 @@
+YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object
+detectors
+Chien-Yao Wang1, Alexey Bochkovskiy, and Hong-Yuan Mark Liao1
+1Institute of Information Science, Academia Sinica, Taiwan
+kinyiu@iis.sinica.edu.tw, alexeyab84@gmail.com, and liao@iis.sinica.edu.tw
+Abstract
+YOLOv7 surpasses all known object detectors in both
+speed and accuracy in the range from 5 FPS to 160 FPS
+and has the highest accuracy 56.8% AP among all known
+real-time object detectors with 30 FPS or higher on GPU
+V100. YOLOv7-E6 object detector (56 FPS V100, 55.9%
+AP) outperforms both transformer-based detector SWIN-
+L Cascade-Mask R-CNN (9.2 FPS A100, 53.9% AP) by
+509% in speed and 2% in accuracy, and convolutional-
+based detector ConvNeXt-XL Cascade-Mask R-CNN (8.6
+FPS A100, 55.2% AP) by 551% in speed and 0.7% AP
+in accuracy, as well as YOLOv7 outperforms: YOLOR,
+YOLOX, Scaled-YOLOv4, YOLOv5, DETR, Deformable
+DETR, DINO-5scale-R50, ViT-Adapter-B and many other
+object detectors in speed and accuracy. Moreover, we train
+YOLOv7 only on MS COCO dataset from scratch without
+using any other datasets or pre-trained weights. Source
+code is released in https://github.com/WongKinYiu/yolov7.
+1. Introduction
+Real-time object detection is a very important topic in
+computer vision, as it is often a necessary component in
+computer vision systems. For example, multi-object track-
+ing [94, 93], autonomous driving [40, 18], robotics [35, 58],
+medical image analysis [34, 46], etc. The computing de-
+vices that execute real-time object detection is usually some
+mobile CPU or GPU, as well as various neural processing
+units (NPU) developed by major manufacturers. For exam-
+ple, the Apple neural engine (Apple), the neural compute
+stick (Intel), Jetson AI edge devices (Nvidia), the edge TPU
+(Google), the neural processing engine (Qualcomm), the AI
+processing unit (MediaTek), and the AI SoCs (Kneron), are
+all NPUs. Some of the above mentioned edge devices focus
+on speeding up different operations such as vanilla convolu-
+tion, depth-wise convolution, or MLP operations. In this pa-
+per, the real-time object detector we proposed mainly hopes
+that it can support both mobile GPU and GPU devices from
+the edge to the cloud.
+In recent years, the real-time object detector is still de-
+veloped for different edge device. For example, the devel-
+Figure 1: Comparison with other real-time object detectors, our
+proposed methods achieve state-of-the-arts performance.
+opment of MCUNet [49, 48] and NanoDet [54] focused on
+producing low-power single-chip and improving the infer-
+ence speed on edge CPU. As for methods such as YOLOX
+[21] and YOLOR [81], they focus on improving the infer-
+ence speed of various GPUs. More recently, the develop-
+ment of real-time object detector has focused on the de-
+sign of efﬁcient architecture. As for real-time object de-
+tectors that can be used on CPU [54, 88, 84, 83], their de-
+sign is mostly based on MobileNet [28, 66, 27], ShufﬂeNet
+[92, 55], or GhostNet [25]. Another mainstream real-time
+object detectors are developed for GPU [81, 21, 97], they
+mostly use ResNet [26], DarkNet [63], or DLA [87], and
+then use the CSPNet [80] strategy to optimize the architec-
+ture. The development direction of the proposed methods in
+this paper are different from that of the current mainstream
+real-time object detectors. In addition to architecture op-
+timization, our proposed methods will focus on the opti-
+mization of the training process. Our focus will be on some
+optimized modules and optimization methods which may
+strengthen the training cost for improving the accuracy of
+object detection, but without increasing the inference cost.
+We call the proposed modules and optimization methods
+trainable bag-of-freebies.
+1arXiv:2207.02696v1  [cs.CV]  6 Jul 2022
