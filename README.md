@@ -1,2 +1,61 @@
 # UdemyCourse_LLMs_LangChain
 Build Real World LLM powered applications with LangChain, OpenAI, Llama2, Hugging Face. Create Web Apps with Streamlit
+
+---
+- Master the basics of LangChain and the fundamentals of Large Language Models (LLMs)
+- How to Use LangChain, OpenAI, Llama 2, Hugging Face to Build LLM-Powered Applications.
+- Learn about LangChain components, including LLM wrappers, prompt templates, chains, agents, memory and document loaders
+- Learn to apply LLM techniques to personal documents and projects
+- Learn how to use embeddings and vector data stores.
+- Learn about FAISS and Similarity Search.
+- Learn about Pinecone and ChromaDB
+- Project: Create a Simple Chatbot with Llama 2 and LangChain
+- Project: Quiz MCQ Creator Application
+- Project: YouTube Script Writing Application
+- Project: PDF Chat App (GUI) | ChatGPT for Your PDF File
+- Project: Chat with Multiple PDF Documents | Streamlit Application
+- Project: Summarize PDF Using LangChain, OpenAI & Gradio
+- Project: YouTube Video Summarizer
+- Project: PrivateGPT- Chat with your Files Offline and Free
+- Project: Support Chat Bot For Your Website
+- Project: Question a Book with (LangChain + Llama 2 + Pinecone)
+- Project: Create a chatbot to chat with multiple documents including pdf, .docs, .txt using Llama 2 , LangChain/ OpenAI and ChromaDB
+- Project: Create a Custom Chatbot for any Website with LangChain and Llama 2/ OpenAI
+- Project: Creating a Flask API for Automatic Content Summarization using LangChain and Llama 2/ Open AI Fine-Tune Llama 2 Model with LangChain on Custom Dataset Introducing 'GPT-LLM-Trainer' — the world's simplest way to train a task-specific model. Just input your idea, and let the AI do the rest.
+- Project: Create a Medical Chatbot with Llama2, Pinecone and LangChain
+- Project: ChatCSV App - Chat with CSV files using LangChain and Llama 2
+- Project: Chat with Multiple PDFs using Llama 2, Pinecone and LangChain
+- Project: Source Code Analysis with LangChain, OpenAI and ChromaDB
+- Project: Run Code Llama on CPU and Create a Web App with Gradio Run PaLM 2 in Google Colab | How to use Free Google PaLM API
+- Project: Chat with Multiple PDFs using PaLM 2, Pinecone and LangChain
+- Project: Streamlit App | Chat with Multiple PDFs using PaLM 2, FAISS and LangChain
+- Project: Chat with Your  Documents using Llama-Index and Google PaLM 2 Llama2 Chatbot Streamlit App with Replicate.
+
+  ---
+
+- 1_Chatbot_Llama2_LangChain
+- 2_ChatApp_ChatGPT_LangChain_OpenAI
+- 3_YouTubeScriptWritingApp_LangChain_OpenAI
+- 4_MCQ-Quiz-CreatorApp_LangChain_OpenAI_Hugging Face
+- 5_Chat_Multiple-PDF-Documents_StreamlitApp_LangChain_OpenAI
+- 6_ChatBot_Website
+- 7_YouTubeVideoSummarizer_StreamlitApp_LangChain_OpenAI
+- 8_SummarizePDF_LangChain_OpenAI_GradioApp
+- 9_PrivateGPT- Chat_PDF-Files
+- 10_Chatbot-PDFs_LangChain_Llama2_Pinecone
+- 11_Chatbot-MultiplePDFs_LangChain_Llama2_ChromaDB
+- 12_CustomChatbot_Website_LangChain_Llama2_OpenAI_FAISS
+- 13_ContentSummarization_LangChain_Llama2_OpenAI_FlaskApp
+- 14_GPT-LLM-Trainer_CustomTraining
+- 15_MedicalChatbot_Llama2_Pinecone_LangChain
+- 16_Fine-Tune_Llama2-Model_LangChain_CustomDataset
+- 17_Chat_CSV_Files_LangChain_Llama 2
+- 18_Chat_MultiplePDFs_Llama2_Pinecone_LangChain
+- 19_Run_CodeLlama_CPU_WebApp_Gradio
+- 20_SourceCodeAnalysis_LangChain_OpenAI_ChromaDB
+- 21_Chat_MultiplePDFs_PaLM2_Pinecone _LangChain
+- 22_Chat_MultiplePDFs_PaLM2_FAISS_LangChain_StreamlitApp
+- 23_Chat_Documents_Llama-Index_GooglePaLM2
+- 24_Llama2_Chatbot-Streamlit_Replicate
+
+  ---
